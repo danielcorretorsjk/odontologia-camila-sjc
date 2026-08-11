@@ -23,7 +23,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Sans:wght@400;500;600&family=Outfit:wght@300;400;500&display=swap"
+        />
+      </head>
+      <body style={{ backgroundColor: '#F4EFE6', color: '#1B2921', fontFamily: "'Instrument Sans', sans-serif", margin: 0, padding: 0, lineHeight: 1.6 }}>
+        {children}
+      </body>
     </html>
   );
 }
