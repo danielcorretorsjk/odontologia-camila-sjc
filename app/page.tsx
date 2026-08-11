@@ -62,10 +62,13 @@ export default function Home() {
               </div>
             </div>
             
-            {/* Arte decorativa geométrica */}
+            {/* Imagem real da dentista */}
             <div className="hero-art">
-              <div className="hero-art-circle"></div>
-              <div className="hero-art-shape"></div>
+              <img 
+                src="/images/dentista.jpg" 
+                alt="Dra. Camila Ferreira - Dentista profissional"
+                className="hero-img-real"
+              />
             </div>
           </div>
         </div>
@@ -105,6 +108,16 @@ export default function Home() {
       <section id="clinica" className="secao secao-invertida">
         <div className="container">
           <div className="sobre-grid">
+            {/* Imagem do consultório */}
+            <div>
+              <img 
+                src="/images/consultorio.jpg" 
+                alt="Consultório moderno da Dra. Camila Ferreira"
+                className="hero-img-real"
+                style={{ borderRadius: "12px" }}
+              />
+            </div>
+            
             {/* Stats lado a lado */}
             <div>
               <p className="texto-capacidade" style={{ color: "#C2705E" }}>Experiência comprovada</p>
@@ -116,22 +129,22 @@ export default function Home() {
                 Formada pela UNESP com especializações internacionais. 
                 Membro da Sociedade Brasileira de Estética Dental.
               </p>
-            </div>
-            
-            {/* Stats grid */}
-            <div>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "2rem" }}>
-                <div className="stat-item">
-                  <div className="stat-valor">12+</div>
-                  <div className="stat-label" style={{ fontFamily: "'Outfit', sans-serif", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase" }}>Anos de experiência</div>
-                </div>
-                <div className="stat-item">
-                  <div className="stat-valor">2.5k</div>
-                  <div className="stat-label" style={{ fontFamily: "'Outfit', sans-serif", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase" }}>Pacientes atendidos</div>
-                </div>
-                <div className="stat-item">
-                  <div className="stat-valor">4.9★</div>
-                  <div className="stat-label" style={{ fontFamily: "'Outfit', sans-serif", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase" }}>Nota média Google</div>
+              
+              {/* Stats grid */}
+              <div style={{ marginTop: "2rem" }}>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "2rem" }}>
+                  <div className="stat-item">
+                    <div className="stat-valor">12+</div>
+                    <div className="stat-label" style={{ fontFamily: "'Outfit', sans-serif", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase" }}>Anos de experiência</div>
+                  </div>
+                  <div className="stat-item">
+                    <div className="stat-valor">2.5k</div>
+                    <div className="stat-label" style={{ fontFamily: "'Outfit', sans-serif", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase" }}>Pacientes atendidos</div>
+                  </div>
+                  <div className="stat-item">
+                    <div className="stat-valor">4.9★</div>
+                    <div className="stat-label" style={{ fontFamily: "'Outfit', sans-serif", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase" }}>Nota média Google</div>
+                  </div>
                 </div>
               </div>
             </div>
